@@ -8,10 +8,18 @@ print(f"Pelaajan ikä: {player_age}")
 
 # Jos pelaaja alle 12 vuotta, ilmoita alaikäisyys ja lopeta peli.
 if int(player_age) < 12:
-    print("Pelaaja on alaikäinen.")
-    break
-    print("Peli lopetetaan.")
+    print("Olet alaikäinen, ohjelma suljetaan.")
 else: 
     print(f"Tervetuloa, {player_name}!")
-    print(f"Päävalikko: Käynnistä peli, Asetukset, Poistu")
-if
+    print(f"Päävalikko\n1.  Käynnistä peli\n2. Asetukset\n3. Poistu")
+    komento = input("Anna komento: ")
+    if komento == "1":
+        print("Ladataan...")
+        print(f"Päävalikko\n1.  Käynnistä peli\n2. Asetukset\n3. Poistu")
+    komento = input("Anna komento: ")
+    if komento == "2":
+        print("Kieli, ääni, grafiikat")
+        print(f"Päävalikko\n1.  Käynnistä peli\n2. Asetukset\n3. Poistu")
+    komento = input("Anna komento: ")
+    if komento == "3":
+        print("Suljetaan...")
