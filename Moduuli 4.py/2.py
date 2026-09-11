@@ -1,2 +1,12 @@
-laivan hytti luokka = (input("Ilmoita hytti luokka (LUX, A, B): ")): 
-print 
+hyttiluokka = input("Anna laivan hyttiluokka (LUX, A, B, C): ").upper()
+
+if hyttiluokka == "LUX":
+    print("LUX on parvekkeellinen hytti yläkannella.")
+elif hyttiluokka == "A":
+    print("A on ikkunallinen hytti autokannen yläpuolella.")
+elif hyttiluokka == "B":
+    print("B on ikkunaton hytti autokannen yläpuolella.")
+elif hyttiluokka == "C":
+    print("C on ikkunaton hytti autokannen alapuolella.")
+else:
+    print("Virheellinen hyttiluokka.")
